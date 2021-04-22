@@ -5,11 +5,12 @@ import EthicalCitiesLogoImg from "../../assets/images/logo.png";
 const LogoWrapper = styled.div`
   display: flex;
   align-items: center;
+  
 `;
 
 const LogoImg = styled.div`
-  width: 29px;
-  height: 29px;
+  width: 20px;
+  height: 20px;
 
   img {
     width: 100%;
@@ -18,11 +19,11 @@ const LogoImg = styled.div`
 `;
 
 const LogoText = styled.h2`
-  font-size: 16px;
+  color:#00e1ff;
+  font-size: 12px;
   margin: 0;
-  margin-left: 4px;
-  color: #222;
-  font-weight: 500;
+  margin-left: 6px;
+  font-weight: 350;
 `;
 
 export function Logo(props) {
@@ -31,7 +32,7 @@ export function Logo(props) {
       <LogoImg>
         <img src={EthicalCitiesLogoImg} alt="Ethical Cities logo" />
       </LogoImg>
-      <LogoText>Ethical Cities</LogoText>
+      <LogoText>Code<span>Academy</span>-Project</LogoText>
     </LogoWrapper>
   );
 }

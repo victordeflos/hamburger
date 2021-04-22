@@ -3,18 +3,19 @@ import styled from "styled-components";
 
 const AccessibilityContainer = styled.div`
   display: flex;
-  margin-left: 10px;
+  margin-left: 15px;
+  
 `;
 
 const RegisterButton = styled.button`
   border: 0;
   outline: 0;
   padding: 8px 1em;
-  color: #fff;
+  color: white;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 300;
   border-radius: 20px;
-  background-color: #6adf76;
+  background-color: #07fff3;
   background-image: linear-gradient(to right, transparent 0%, #00c9ff 100%);
   transition: all 240ms ease-in-out;
   cursor: pointer;
@@ -24,7 +25,7 @@ const RegisterButton = styled.button`
   }
 
   &:not(:last-of-type) {
-    margin-right: 7px;
+    margin-right: 10px;
   }
 `;
 
@@ -32,9 +33,9 @@ const LoginButton = styled.button`
   border: 0;
   outline: 0;
   padding: 8px 1em;
-  color: #222;
-  font-size: 13px;
-  font-weight: 600;
+  color:#00ffea;
+  font-size: 12px;
+  font-weight: 300;
   border-radius: 20px;
   background-color: transparent;
   border: 2px solid #00c9ff;
@@ -42,7 +43,7 @@ const LoginButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    color: #fff;
+    color: #000000;
     background-color: #00c9ff;
   }
 
@@ -54,8 +55,8 @@ const LoginButton = styled.button`
 export function Accessibility(props) {
   return (
     <AccessibilityContainer>
-      <RegisterButton>Register</RegisterButton>
-      <LoginButton>Login</LoginButton>
+      <RegisterButton>Posts</RegisterButton>
+      <LoginButton>Add Posts</LoginButton>
     </AccessibilityContainer>
   );
 }

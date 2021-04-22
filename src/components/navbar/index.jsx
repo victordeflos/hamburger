@@ -9,11 +9,14 @@ import { MobileNavLinks } from "./mobileNavLinks";
 
 const NavbarContainer = styled.div`
   width: 100%;
-  height: 60px;
-  box-shadow: 0 1px 3px rgba(15, 15, 15, 0.13);
+  height: 45px;
+  box-shadow: 0 2px 3px rgba(23, 246, 235, 0.507);
   display: flex;
   align-items: center;
-  padding: 0 1.5em;
+  padding: 0 1em;
+  background-color: black;
+  
+  
 `;
 
 const LeftSection = styled.div`
